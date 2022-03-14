@@ -22,4 +22,4 @@ Draws the widget on the screen.
 
 #### Defined in
 
-[src/package_3/index.ts:9](https://github.com/avodaq-dev/docasaurus-test/blob/7a1cf26/monorepo/src/package_3/index.ts#L9)
+[src/package_3/index.ts:9](https://github.com/avodaq-dev/monorepo/blob/f829f31/src/package_3/index.ts#L9)

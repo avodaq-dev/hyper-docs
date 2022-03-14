@@ -7,7 +7,7 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-**Automatic Api Docs**
+**Automatic docs for TS Docstrings**
 
 This is a Test readme for the automatic Api documentation.
 

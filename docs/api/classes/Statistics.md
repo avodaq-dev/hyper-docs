@@ -40,4 +40,4 @@ The arithmetic mean of `x` and `y`
 
 #### Defined in
 
-[src/package_1/index.ts:14](https://github.com/avodaq-dev/docasaurus-test/blob/7a1cf26/monorepo/src/package_1/index.ts#L14)
+[src/package_1/index.ts:14](https://github.com/avodaq-dev/monorepo/blob/f829f31/src/package_1/index.ts#L14)
