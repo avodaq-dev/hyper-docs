@@ -1,0 +1,41 @@
+@use 'sass:map';
+@use '../abstracts/index' as p;
+
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+
+
+// colors
+:root {
+  --ifm-color-primary-lightest: #{map.get(p.$avo-green-palette, 200)};
+  --ifm-color-primary-lighter: #{map.get(p.$avo-green-palette, 300)};
+  --ifm-color-primary-light: #{map.get(p.$avo-green-palette, 400)};
+  --ifm-color-primary: #{map.get(p.$avo-green-palette, 500)};
+  --ifm-color-primary-dark: #{map.get(p.$avo-green-palette, 600)};
+  --ifm-color-primary-darker: #{map.get(p.$avo-green-palette, 700)};
+  --ifm-color-primary-darkest: #{map.get(p.$avo-green-palette, 800)};
+
+  --ifm-navbar-background-color: #{map.get(p.$avo-warm-grey-palette, 50)};
+  --ifm-background-color: #{map.get(p.$avo-warm-grey-palette, 50)} !important;
+  --ifm-footer-background-color: #{map.get(p.$avo-warm-grey-palette, 100)};
+}
+
+// lighter colors for dark
+[data-theme='dark'] {
+  --ifm-color-primary-lightest: #{map.get(p.$avo-green-palette, 100)};
+  --ifm-color-primary-lighter: #{map.get(p.$avo-green-palette, 200)};
+  --ifm-color-primary-light: #{map.get(p.$avo-green-palette, 300)};
+  --ifm-color-primary: #{map.get(p.$avo-green-palette, 400)};
+  --ifm-color-primary-dark: #{map.get(p.$avo-green-palette, 500)};
+  --ifm-color-primary-darker: #{map.get(p.$avo-green-palette, 600)};
+  --ifm-color-primary-darkest: #{map.get(p.$avo-green-palette, 700)};
+
+  --ifm-navbar-background-color: #{p.$avo-dark-blue};
+  --ifm-background-color: #{p.$avo-dark-blue} !important;
+  --ifm-footer-background-color: #{p.$avo-dark-blue-dark};
+}

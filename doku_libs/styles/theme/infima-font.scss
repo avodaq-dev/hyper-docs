@@ -1,0 +1,38 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+// todo: use geograph instead jost
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+// font todo: check if roboto
+:root {
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Roboto', sans-serif;
+  --font-family-geo: 'Jost', sans-serif;
+}
+
+
+// General
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-geo);
+}
+
+// Navigation
+.navbar__link {
+  font-family: var(--font-family-geo);
+
+  .dropdown__menu {
+    font-family: var(--ifm-font-family-base);
+  }
+}
+
+
+//footer
+.footer__title {
+  font-family: var(--font-family-geo);
+}

@@ -1,0 +1,85 @@
+$black-8: rgba(black, 0.8);
+$black-12: rgba(black, 0.12);
+$black-16: rgba(black, 0.16);
+$black-24: rgba(black, 0.24);
+$black-36: rgba(black, 0.36);
+$black-48: rgba(black, 0.48);
+$black-60: rgba(black, 0.6);
+$black-72: rgba(black, 0.72);
+$black-84: rgba(black, 0.84);
+$black-90: rgba(black, 0.9);
+$black-96: rgba(black, 0.96);
+
+$white-8: rgba(white, 0.8);
+$white-12: rgba(white, 0.12);
+$white-16: rgba(white, 0.16);
+$white-24: rgba(white, 0.24);
+$white-36: rgba(white, 0.36);
+$white-48: rgba(white, 0.48);
+$white-60: rgba(white, 0.6);
+$white-72: rgba(white, 0.72);
+$white-84: rgba(white, 0.84);
+$white-90: rgba(white, 0.9);
+$white-96: rgba(white, 0.96);
+
+$avo-green: hsl(163, 71%, 53%); // #32dcab
+$avo-red: hsl(329, 100%, 45%); // #e80076
+$avo-dark-blue-dark: hsl(197, 100%, 8%); // #002a3a
+$avo-dark-blue: hsl(197, 100%, 11%); // #002a3a
+$avo-dark-blue-light: hsl(197, 100%, 14%);
+$avo-dark-blue-lighter: hsl(197, 100%, 17%);
+
+
+$avo-green-palette: (
+        50: hsl(166, 71%, 93%),
+        100: hsl(164, 69%, 81%),
+        200: hsl(164, 70%, 69%),
+        300: hsl(163, 71%, 58%),
+        'avo-green': hsl(163, 71%, 53%),
+        400: hsl(164, 73%, 49%),
+        500: hsl(163, 92%, 39%),
+        600: hsl(163, 93%, 36%),
+        700: hsl(163, 94%, 32%),
+        800: hsl(162, 96%, 28%),
+        900: hsl(158, 100%, 20%)
+);
+
+$avo-red-palette: (
+        50: hsl(329, 90%, 94%),
+        100: hsl(328, 91%, 85%),
+        200: hsl(329, 92%, 76%),
+        300: hsl(329, 93%, 66%),
+        400: hsl(329, 92%, 59%),
+        500: hsl(329, 92%, 52%),
+        600: hsl(327, 88%, 48%),
+        'avo-red': hsl(329, 100%, 45%),
+        700: hsl(325, 88%, 43%),
+        800: hsl(323, 89%, 38%),
+        900: hsl(317, 91%, 29%),
+);
+
+$avo-cold-grey-palette: (
+        50: hsl(204, 15%, 94%),
+        100: hsl(198, 16%, 84%),
+        200: hsl(198, 16%, 84%),
+        300: hsl(200, 16%, 62%),
+        400: hsl(200, 15%, 54%),
+        500: hsl(200, 18%, 46%),
+        600: hsl(199, 18%, 40%),
+        700: hsl(199, 18%, 33%),
+        800: hsl(200, 18%, 26%),
+        900: hsl(200, 19%, 18%),
+);
+
+$avo-warm-grey-palette: (
+        50: hsl(34, 3%, 94%),
+        100: hsl(28, 3%, 84%),
+        200: hsl(28, 3%, 84%),
+        300: hsl(30, 3%, 62%),
+        400: hsl(30, 4%, 54%),
+        500: hsl(30, 5%, 46%),
+        600: hsl(29, 5%, 40%),
+        700: hsl(29, 5%, 33%),
+        800: hsl(30, 5%, 26%),
+        900: hsl(30, 6%, 18%),
+);
