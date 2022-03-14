@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'hyper',
     tagline: 'hyper is cool',
-    url: 'https://www.hyper.rescoped.io',
-    baseUrl: '/',
-    onBrokenLinks: 'throw',
+    url: 'https://avodaq-dev.github.io',
+    baseUrl: '/hyper-docs/',
+    onBrokenLinks: 'log',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/fav_re.svg',
-    organizationName: 'rescoped', // Usually your GitHub org/user name.
+    organizationName: 'avodaq-dev', // Usually your GitHub org/user name.
     projectName: 'hyper-docs', // Usually your repo name.
+    deploymentBranch: 'main',
 
     presets: [
         [
