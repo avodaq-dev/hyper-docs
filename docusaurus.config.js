@@ -16,7 +16,7 @@ const config = {
     trailingSlash: true, //for GitHub
     organizationName: 'avodaq-dev', // Usually your GitHub org/user name.
     projectName: 'hyper-docs', // Usually your repo name.
-    deploymentBranch: 'main',
+    deploymentBranch: 'gh-pages',
 
     presets: [
         [
