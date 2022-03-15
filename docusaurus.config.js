@@ -6,13 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'hyper',
+    title: 'hyper-docs',
     tagline: 'hyper is cool',
     url: 'https://avodaq-dev.github.io',
     baseUrl: '/hyper-docs/',
-    onBrokenLinks: 'log',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/fav_re.svg',
+    trailingSlash: true, //for GitHub
     organizationName: 'avodaq-dev', // Usually your GitHub org/user name.
     projectName: 'hyper-docs', // Usually your repo name.
     deploymentBranch: 'main',
