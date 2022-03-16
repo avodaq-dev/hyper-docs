@@ -1,6 +1,6 @@
 @use 'sass:map';
 
-@forward '~@avo/avo-libs/styles/components';
-@forward '~@avo/avo-libs/styles/theme';
+@forward '~@avo/monorepo/doku_libs/styles/components';
+@forward '~@avo/monorepo/doku_libs/styles/theme';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
