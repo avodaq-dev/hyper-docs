@@ -45,8 +45,8 @@ const config = {
     plugins: ['docusaurus-plugin-sass',
         ['docusaurus-plugin-typedoc',
             {
-                entryPoints: ['../monorepo/index.ts'],
-                tsconfig: '../monorepo/tsconfig.json',
+                entryPoints: ['node_modules/@avo/monorepo/index.ts'],
+                tsconfig: 'node_modules/@avo/monorepo/tsconfig.json',
                 watch: process.env.TYPEDOC_WATCH,
             }
         ]
