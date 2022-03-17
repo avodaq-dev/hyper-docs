@@ -68,13 +68,11 @@ const config = {
             navbar: {
                 hideOnScroll: true,
                 logo: {
-                    alt: 'hyperdocs logo',
-                    src: 'img/re_logo.svg',
-                    srcDark: 'img/re_logo_dark.svg',
-                    href: '../rescoped-site'
+                    alt: 'hyperscope',
+                    src: 'img/hy_logo.svg',
+                    srcDark: 'img/hy_logo_dark.svg',
                 },
                 items: [
-                    {to: '/', label: 'hyperscope', position: 'left'},
                     {
                         type: 'doc',
                         docId: 'intro',
