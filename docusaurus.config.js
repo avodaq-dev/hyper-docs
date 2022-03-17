@@ -68,10 +68,12 @@ const config = {
             navbar: {
                 hideOnScroll: true,
                 logo: {
-                    alt: 'hyperdocs logo',
+                    alt: 'rescoped logo',
                     src: 'img/re_logo.svg',
                     srcDark: 'img/re_logo_dark.svg',
-                    href: '../rescoped-site'
+                    width: 56,
+                    href: 'https://avodaq-dev.github.io/rescoped-site/',
+                    target: '_self'
                 },
                 items: [
                     {to: '/', label: 'hyperscope', position: 'left'},
