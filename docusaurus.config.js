@@ -29,7 +29,6 @@ const config = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                    routeBasePath: '/',
                 },
                 blog: {
                     showReadingTime: true,
@@ -70,30 +69,19 @@ const config = {
                 hideOnScroll: true,
                 logo: {
                     alt: 'hyperdocs logo',
-                    src: 'img/hy_logo.svg',
-                    srcDark: 'img/hy_logo_dark.svg',
+                    src: 'img/re_logo.svg',
+                    srcDark: 'img/re_logo_dark.svg',
+                    href: '../rescoped-site'
                 },
                 items: [
+                    {to: '/', label: 'hyperscope', position: 'left'},
                     {
-                        label: 'Test 1',
+                        type: 'doc',
+                        docId: 'intro',
                         position: 'left',
-                        items: [
-                            {
-                                href: '#',
-                                label: 'Test',
-                                target: '_blank',
-                                rel: null,
-                            }, {
-                                href: '#',
-                                label: 'Test',
-                                target: '_blank',
-                                rel: null,
-                            },
-
-                        ],
+                        label: 'Documentation',
                     },
-                    {to: '/test2', label: 'Test 2', position: 'left'},
-                    {to: '/blog', label: 'Blog', position: 'left'},
+                    {to: '/blog', label: 'Changelog', position: 'left'},
                     {
                         href: 'https://github.com/facebook/docusaurus',
                         label: 'GitHub',
