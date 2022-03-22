@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'hyper-docs',
+    title: 'hyperscope',
     tagline: 'hyper is cool',
     url: 'https://avodaq-dev.github.io',
     baseUrl: '/hyper-docs/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/fav_re.svg',
+    favicon: 'img/fav_hy.svg',
     trailingSlash: true, //for GitHub
     organizationName: 'avodaq-dev', // Usually your GitHub org/user name.
     projectName: 'hyper-docs', // Usually your repo name.
@@ -58,13 +58,6 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            announcementBar: {
-                id: 'support_us',
-                content:
-                    'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-
-                isCloseable: true,
-            },
             navbar: {
                 hideOnScroll: true,
                 logo: {
@@ -72,8 +65,7 @@ const config = {
                     src: 'img/re_logo.svg',
                     srcDark: 'img/re_logo_dark.svg',
                     width: 56,
-                    href: 'https://avodaq-dev.github.io/rescoped-site/',
-                    target: '_self'
+                    href: 'https://avodaq-dev.github.io/rescoped-site/'
                 },
                 items: [
                     {to: '/', label: 'hyperscope', position: 'left'},
