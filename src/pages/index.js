@@ -11,7 +11,6 @@ import ReLogo from "@avo/monorepo/doku_libs/static/img/rescoped_logo_white.svg";
 import {fadeProps} from "@avo/monorepo/doku_libs/reveal_animations/fadeAnimation";
 
 
-
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     console.log('GH actions work');
