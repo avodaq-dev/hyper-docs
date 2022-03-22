@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'hyper-docs',
+    title: 'hyperscope',
     tagline: 'hyper is cool',
     url: 'https://avodaq-dev.github.io',
     baseUrl: '/hyper-docs/',
@@ -58,13 +58,6 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            announcementBar: {
-                id: 'support_us',
-                content:
-                    'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-
-                isCloseable: true,
-            },
             navbar: {
                 hideOnScroll: true,
                 logo: {
