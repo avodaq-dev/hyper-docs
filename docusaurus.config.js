@@ -12,7 +12,7 @@ const config = {
     baseUrl: '/hyper-docs/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/fav_re.svg',
+    favicon: 'img/fav_hy.svg',
     trailingSlash: true, //for GitHub
     organizationName: 'avodaq-dev', // Usually your GitHub org/user name.
     projectName: 'hyper-docs', // Usually your repo name.
@@ -72,8 +72,7 @@ const config = {
                     src: 'img/re_logo.svg',
                     srcDark: 'img/re_logo_dark.svg',
                     width: 56,
-                    href: 'https://avodaq-dev.github.io/rescoped-site/',
-                    target: '_self'
+                    href: 'https://avodaq-dev.github.io/rescoped-site/'
                 },
                 items: [
                     {to: '/', label: 'hyperscope', position: 'left'},
