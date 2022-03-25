@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'hyperscope',
-    tagline: 'hyper is cool',
+    title: 'Frontend Solutions',
+    tagline: 'Frontend is cool',
     url: 'https://avodaq-dev.github.io',
     baseUrl: '/hyper-docs/',
     onBrokenLinks: 'warn',
@@ -68,7 +68,7 @@ const config = {
                     href: 'https://avodaq-dev.github.io/rescoped-site/'
                 },
                 items: [
-                    {to: '/', label: 'hyperscope', position: 'left'},
+                    {to: '/', label: 'Frontend', position: 'left'},
                     {
                         type: 'doc',
                         docId: 'intro',
