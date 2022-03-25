@@ -1,34 +1,35 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.scss';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import FrontendBackend from '@site/src/components/FrontendBackend';
+import {useColorMode} from '@docusaurus/theme-common';
 
+import ReLogoColor from "@avo/monorepo/doku_libs/static/img/rescoped_logo_color.svg";
+import ReLogoWhite from "@avo/monorepo/doku_libs/static/img/rescoped_logo_white.svg";
 import {Fade} from "react-awesome-reveal";
-// import ReLogo from "@avo/monorepo/doku_libs/static/img/rescoped_logo_white.svg";
 import {fadeProps} from "@avo/monorepo/doku_libs/reveal_animations/fadeAnimation";
 
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
-    console.log('GH actions work');
+    const {isDarkTheme} = useColorMode();
+    const darkTheme = isDarkTheme ? 'bg-pink-600' : 'bg-pink-50';
+    const darkThemehide = isDarkTheme ? 'hidden' : '';
+    const lightThemehide = !isDarkTheme ? 'hidden' : '';
+
     return (
-        <header className={clsx('hero hero--primary', styles.heroBanner)}>
-            <div className="container">
+            <header className={clsx('px-4 sm:px-16 py-32', darkTheme)}>
+                <div className="flex flex-col gap-4">
 
                 <Fade {...fadeProps}>
-                    {/*<ReLogo title="Docusaurus Logo" className="logo" style={{width: 120}}/>*/}
-                    <h1 className="hero__title">{siteConfig.title}</h1>
-                    <p className="hero__subtitle">{siteConfig.tagline}</p>
-                    <div className={styles.buttons}>
-                        <Link
-                            className="button button--secondary button--lg"
-                            to="/docs/intro">
-                            Docusaurus Tutorial - 5min ⏱️
-                        </Link>
-                    </div>
+                        <div>
+                            <ReLogoColor width="120" title="rescoped Logo" className={clsx('logo ', darkThemehide)}/>
+                            <ReLogoWhite width="120" title="rescoped Logo" className={clsx('logo', lightThemehide)}/>
+                        </div>
+                        <h1 className="text-5xl font-bold">{siteConfig.title}</h1>
+                    <p className="text-xl font-bold mb-4">{siteConfig.tagline}</p>
                 </Fade>
 
             </div>
@@ -43,9 +44,12 @@ export default function Home() {
         <Layout
             title={`${siteConfig.title}`}
             description="Description will go into a meta tag in <head />">
+            <Head>
+                <script src="https://cdn.tailwindcss.com"></script>
+            </Head>
             <HomepageHeader/>
             <main>
-                <HomepageFeatures/>
+                <FrontendBackend/>
             </main>
         </Layout>
     );
