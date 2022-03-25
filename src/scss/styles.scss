@@ -1,6 +1,13 @@
 @use 'sass:map';
 
 @forward '~@avo/monorepo/doku_libs/styles/components';
-@forward '~@avo/monorepo/doku_libs/styles/theme';
+@use '~@avo/monorepo/doku_libs/styles/theme';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// colors
+:root {
+  @include theme.avo-pink-light;
+}
+[data-theme='dark'] {
+  @include theme.avo-pink-dark;
+}
