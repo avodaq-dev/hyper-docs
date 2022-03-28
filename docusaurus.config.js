@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -37,13 +38,17 @@ const config = {
                         'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 },
                 theme: {
-                    customCss: [require.resolve('./src/scss/styles.scss')],
+                    customCss: [
+                        require.resolve('./src/scss/tailwind.css'),
+                        require.resolve('./src/scss/styles.scss')],
                 },
             }),
         ],
     ],
 
-    plugins: ['docusaurus-plugin-sass',
+    plugins: [
+        path.resolve(__dirname, 'plugin-tailwind-docusaurus'),
+        'docusaurus-plugin-sass',
         ['docusaurus-plugin-typedoc',
             {
                 entryPoints: ['node_modules/@avo/monorepo/index.ts'],

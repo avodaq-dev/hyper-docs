@@ -6,8 +6,12 @@
 
 // colors
 :root {
-  @include theme.avo-pink-light;
+  @include theme.avo-pink;
+  --ifm-footer-color: hsl(197, 100%, 16%);
+  --ifm-footer-link-color: hsl(214, 10%, 87%);
+  --ifm-footer-background-color: var(--ifm-color-primary);
 }
 [data-theme='dark'] {
-  @include theme.avo-pink-dark;
+  --ifm-footer-color: hsl(197, 100%, 16%);
+  --ifm-footer-background-color: var(--ifm-color-primary);
 }
