@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import FrontendBackend from '@site/src/components/FrontendBackend';
 import {useColorMode} from '@docusaurus/theme-common';
@@ -15,7 +14,7 @@ import {fadeProps} from "@avo/monorepo/doku_libs/reveal_animations/fadeAnimation
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     const {isDarkTheme} = useColorMode();
-    const darkTheme = isDarkTheme ? 'bg-pink-600' : 'bg-pink-50';
+    const darkTheme = isDarkTheme ? 'bg-avo-pink-pink' : 'bg-avo-pink-50';
     const darkThemehide = isDarkTheme ? 'hidden' : '';
     const lightThemehide = !isDarkTheme ? 'hidden' : '';
 
@@ -44,9 +43,6 @@ export default function Home() {
         <Layout
             title={`${siteConfig.title}`}
             description="Description will go into a meta tag in <head />">
-            <Head>
-                <script src="https://cdn.tailwindcss.com"></script>
-            </Head>
             <HomepageHeader/>
             <main>
                 <FrontendBackend/>
